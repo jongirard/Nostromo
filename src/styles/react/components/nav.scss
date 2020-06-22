@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .right-col {
+    .links {
+      display: inline-flex;
+      list-style-type: none;
+
+      li {
+        padding-left: 35px;
+
+        a {
+          color: #fff;
+          font-family: "ProximaNova-Regular";
+          font-size: 18px;
+          text-decoration: none;
+          @include selection(#fff, $light-green-background);
+
+          &.outlined {
+            border: 2px solid $primary-green;
+            padding: 14px 34px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
