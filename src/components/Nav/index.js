@@ -1,18 +1,37 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
+import React, {useState} from 'react';
 import CustomSvg from '../CustomSvg';
 
 export default function Nav(props) {
+  const [open, toggleOpen] = useState(false);
+  
   return (
     <div className="nav">
       <div className="left-col">
         <CustomSvg type="nostromo" />
       </div>
       <div className="right-col">
-        <ul className="links">
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Our Process</a></li>
-          <li><a className="outlined" href="#">Hire Us</a></li>
-        </ul>
+        <a
+          role="button"
+          class={`navbar-burger ${open ? 'is-active' : ''}`}
+          aria-label="menu"
+          aria-expanded="false"
+          onClick={() => toggleOpen(!open)}
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div className={`right-col dropdown-menu-container ${open ? 'open' : ''}`}>
+        <div className={`dropdown-menu ${open ? 'open' : ''}`}>
+          <ul className="links">
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Our Process</a></li>
+            <li className="outlined"><a className="outlined" href="#">Hire Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   );

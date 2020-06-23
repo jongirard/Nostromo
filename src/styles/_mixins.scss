@@ -30,6 +30,12 @@
   }
 }
 
+@mixin tablet {
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    @content;
+  }
+}
+
 @mixin selection($selectionColor, $highlightColor) {
   &::-moz-selection { background: $highlightColor; color: $selectionColor; }
   &::selection { background: $highlightColor; color: $selectionColor; }

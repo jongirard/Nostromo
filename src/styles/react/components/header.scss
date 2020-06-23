@@ -23,6 +23,10 @@
     position: relative;
     top: 180px;
     @include selection(#fff, $light-green-background);
+
+    @include mobile {
+      top: 130px;
+    }
   }
 
   .navigation-container {

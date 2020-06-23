@@ -5,11 +5,23 @@
   position: relative;
   padding-top: 150px;
 
+  @include mobile {
+    padding-top: 200px;
+  }
+
   h3 {
     font-family: "ProximaNova-Semibold";
     font-size: 27px;
     color: $dark-purple-text;
     font-weight: normal;
+
+    @include mobile {
+      padding-left: 20px;
+    }
+
+    @include tablet {
+      padding-left: 20px;
+    }
   }
 
   .indent-container {
@@ -26,6 +38,12 @@
       color: $grey-blue-text;
       padding-bottom: 55px;
       line-height: 42px;
+
+      &.last {
+        @include mobile {
+          padding-bottom: 10px;
+        }
+      }
 
       .highlight {
         font-family: "ProximaNova-Semibold";

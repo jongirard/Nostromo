@@ -17,7 +17,7 @@ export default function Content(props) {
                   to conceptualize your vision, full stop.
                 </div>
 
-                <div className="paragraph">
+                <div className="paragraph last">
                   We use technologies like <span className="highlight">GraphQL</span>, and <span className="highlight">React</span> (or <span className="highlight">React Native</span> on 
                   mobile) to develop high performance front end and mobile 
                   applications, that not only look good, but work marvelously, too. 

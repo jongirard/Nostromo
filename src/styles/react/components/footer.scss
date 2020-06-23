@@ -16,6 +16,11 @@
       font-size: 18px;
       color: #fff;
       padding-top: 30px;
+
+      @include mobile {
+        text-align: center;
+        line-height: 30px;
+      }
     }
 
     .copyright {
