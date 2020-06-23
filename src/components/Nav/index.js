@@ -27,9 +27,9 @@ export default function Nav(props) {
       <div className={`right-col dropdown-menu-container ${open ? 'open' : ''}`}>
         <div className={`dropdown-menu ${open ? 'open' : ''}`}>
           <ul className="links">
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Our Process</a></li>
-            <li className="outlined"><a className="outlined" href="#">Hire Us</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li className="outlined"><a className="outlined" href="#hire">Hire Us</a></li>
           </ul>
         </div>
       </div>

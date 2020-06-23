@@ -6,7 +6,7 @@ export default function Content(props) {
   return (
     <div className="content">
       <div className="section container">
-        <h3>Our Process</h3>
+        <h3 id="process">Our Process</h3>
         <div className="indent-container">
           <div className="columns">
             <div className="column is-two-thirds">
@@ -33,7 +33,7 @@ export default function Content(props) {
       </div>
 
       <div className="section container">
-        <h3>Case Studies</h3>
+        <h3 id="case-studies">Case Studies</h3>
         <div className="indent-container">
           <Block><span className="inline-logo"><CustomSvg type={'limelit'} /></span> is an upcoming iOS app and web app for content creators and influencers to interact with fans via personal 60 second video calls </Block>
         </div>

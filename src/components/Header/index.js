@@ -13,7 +13,7 @@ export default function Header(props) {
           <div className="hero-header wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.10s">
             Blast Off.
           </div>
-          <div className="join-container">
+          <div id="hire" className="join-container">
             <ContactPanel />
           </div>
         </div>
