@@ -45,7 +45,6 @@ export default class InfluencerForm extends Component {
   }
 
   handleSubmit = (e) => {
-    const { nameError, phoneError, followersError, handleError, emailError, reachableError } = this.state;
     const { nameValid, phoneValid, handleValid, emailValid, reachableValid, followersValid } = this.state;
     const { name, phone_number, handle, email, reachable, followers } = this.state;
 
@@ -147,11 +146,11 @@ export default class InfluencerForm extends Component {
   render() {
     
     const options = [
-      { value: 'instagram', label: 'Instagram' },
-      { value: 'facebook', label: 'Facebook' },
-      { value: 'twitter', label: 'Twitter' },
-      { value: 'snapchat', label: 'Snapchat' },
-      { value: 'tiktok', label: 'TikTok' },
+      { value: 'design', label: 'Design' },
+      { value: 'ui', label: 'UI/UX' },
+      { value: 'mobile', label: 'Mobile App (iOS)' },
+      { value: 'development', label: 'Development' },
+      { value: 'hosting', label: 'Hosting' },
     ]
 
     if (this.state.received === false) {
@@ -218,7 +217,7 @@ export default class InfluencerForm extends Component {
                   options={options}
                   isClearable={true}
                   blurInputOnSelect={true}
-                  placeholder="What services are you interested in?"
+                  placeholder="Primary Requirement?"
                   onBlur={() => this.validateReachable()}
                 />
                 <div className='invalid-feedback'>{this.state.reachableError}</div>
