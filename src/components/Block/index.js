@@ -10,7 +10,7 @@ export default function Block(props) {
           {children}
         </div>
         <div className="link">
-          Read the case study
+          Case study coming soon
         </div>
       </div>
     </div>
